@@ -46,6 +46,8 @@ body.loading { overflow: hidden; }
 /* Mantra */
 .mantra-container { margin-top: 60px; padding: 40px 20px; text-align: center; border-top: 2px dashed #c3e6e4; background: #fff; border-radius: 30px; }
 .mantra-text { font-size: 1.3rem; font-style: italic; color: #333; line-height: 1.8; position: relative; }
+.mantra-text { opacity: 0; animation: fadeInMantra 2s forwards; }
+@keyframes fadeInMantra { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 .mantra-author { display: block; margin-top: 20px; font-size: 0.8rem; letter-spacing: 3px; color: #b2b2b2; text-transform: uppercase; font-weight: bold; }
 
 /* Jempol Kaki */
