@@ -68,5 +68,5 @@ body.loading { overflow: hidden; }
 
 /* Quote */
 blockquote {position: relative;padding: 28px 10px;border: none;background: #fff;text-align: center;font-size: 1.3em;color: #444;}
-blockquote::before {content: "\201C"; /* Tanda kutip pembuka */font-size: 80px;color: #e67e22; /* Warna orange/gold untuk 'Spark' */position: absolute; top: -10px;left: 20px;font-family: serif;}
+blockquote::before {content: "\201C"; /* Tanda kutip pembuka */font-size: 80px;color: #e67e22; /* Warna orange/gold untuk 'Spark' */position: absolute; top: -30px;left: 20px;font-family: serif;}
 blockquote footer {margin-top: 10px;font-weight: bold;font-size: 0.9em;color: #888;}
