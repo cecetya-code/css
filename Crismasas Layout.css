@@ -65,3 +65,8 @@ body.loading { overflow: hidden; }
 #footer-copyright { display: flex; justify-content: center; align-items: center; width: 100%; text-align: center; }
 .copyright-area {font-family: "Love Ya Like A Sister", cursive; font-size: 1.1rem; color: #708090; text-align: center; margin: 0 auto; }
 .copyright-area a { text-decoration: none; color: #708090; font-weight: 700; }
+
+/* Quote */
+blockquote {position: relative;padding: 28px 10px;border: none;background: #fff;text-align: center;font-size: 1.3em;color: #444;}
+blockquote::before {content: "\201C"; /* Tanda kutip pembuka */font-size: 80px;color: #e67e22; /* Warna orange/gold untuk 'Spark' */position: absolute; top: -10px;left: 20px;font-family: serif;}
+blockquote footer {margin-top: 10px;font-weight: bold;font-size: 0.9em;color: #888;}
