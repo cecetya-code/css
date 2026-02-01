@@ -35,7 +35,7 @@ h3 { font-size: 1.2rem; margin: 1em 0 .5em; font-weight: 500; color: #1F1F1F; li
 
 /* Partikel */
 .particles { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 1; pointer-events: none; }
-.particle { position: absolute; background: brown; border-radius: 50%; animation: float 15s infinite linear; box-shadow: 0 0 10px #fdeea5; }
+.particle { position: absolute; background: #5D4037; border-radius: 50%; animation: float 15s infinite linear; box-shadow: 0 0 10px #fdeea5; }
 @keyframes float { 0% { transform: translateY(110vh) scale(0.5); opacity: 0; } 50% { opacity: 0.8; } 100% { transform: translateY(-10vh) scale(1.2); opacity: 0; } }
 
 /* Quote */
