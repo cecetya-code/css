@@ -17,20 +17,14 @@
     setMantra();
   }
 
-  /* 2. PRELOADER */
-  const p=document.getElementById('preloader'),b=document.body,h=()=>{if(p){p.style.opacity='0';setTimeout(()=>{p.style.display='none';b.classList.remove('loading')},500)}};
-  window.addEventListener('load',h);setTimeout(h,5000);
-
-  /* 3. FAKE SCROLLBAR & PERCENTAGE */
+    /* 3. FAKE SCROLLBAR & PERCENTAGE */
   const sa=document.getElementById('fake-scrollbar-area'),st=document.getElementById('fake-scrollbar-thumb'),bd=document.documentElement,sh=50;
   const u=()=>{const wh=window.innerHeight,sh_full=bd.scrollHeight-wh,s=sh_full<=0?0:window.pageYOffset/sh_full,v=s*(wh-sh),pct=Math.round(s*100);if(st){st.style.top=v+'px';st.innerHTML='<span style="font-size:18px;display:block;line-height:1;">\ud83e\uddb6</span>'+(isFinite(pct)?pct:0)+'%'}};
   const i=(e)=>{const y=e.touches?e.touches[0].clientY:e.clientY,v=window.innerHeight-sh;let cp=Math.max(0,Math.min(y-(sh/2),v));window.scrollTo({top:(cp/v)*(bd.scrollHeight-window.innerHeight),behavior:'auto'})};
   if(sa&&st){sa.addEventListener('touchstart',i,{passive:false});sa.addEventListener('touchmove',(e)=>{e.preventDefault();i(e)},{passive:false});sa.addEventListener('mousedown',i);window.addEventListener('scroll',u);window.addEventListener('resize',u);u();}
 
   /* 4. PARTICLES */
-  const c=document.getElementById('particle-container');
-  if(c){c.innerHTML='';for(let j=0;j<80;j++){let pk=document.createElement('div'),sz=(Math.random()*4+1)+'px';pk.className='particle';pk.style.left=Math.random()*100+'vw';pk.style.top=Math.random()*100+'vh';pk.style.width=pk.style.height=sz;pk.style.animationDelay='-'+(Math.random()*20)+'s';pk.style.animationDuration=(Math.random()*15+5)+'s';pk.style.opacity=Math.random()*0.8;c.appendChild(pk)}}
-})();
+(function(){const c=document.getElementById('particle-container');if(c){c.innerHTML='';for(let j=0;j<200;j++){let pk=document.createElement('div'),sz=(Math.random()*5+1)+'px';pk.className='particle';pk.style.left=Math.random()*100+'vw';pk.style.top=Math.random()*100+'vh';pk.style.width=pk.style.height=sz;pk.style.animationDelay='-'+(Math.random()*25)+'s';pk.style.animationDuration=(Math.random()*10+5)+'s';pk.style.opacity=Math.random()*0.9;if(Math.random()>0.5)pk.style.filter=`blur(${Math.random()*2}px)`;c.appendChild(pk)}}})();
 
 /* 5. SWITCH SPARK ICON */
 function changeIcon(){const i=document.getElementById('element-spark');if(i){i.innerHTML=i.innerHTML==='\ud83d\udd25'?'\ud83d\udca7':'\ud83d\udd25'}}
