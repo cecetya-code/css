@@ -24,7 +24,11 @@
   if(sa&&st){sa.addEventListener('touchstart',i,{passive:false});sa.addEventListener('touchmove',(e)=>{e.preventDefault();i(e)},{passive:false});sa.addEventListener('mousedown',i);window.addEventListener('scroll',u);window.addEventListener('resize',u);u();}
 
   /* 4. PARTICLES */
-{const c=document.getElementById('particle-container');if(c){c.innerHTML='';for(let j=0;j<200;j++){let pk=document.createElement('div'),sz=(Math.random()*5+1)+'px';pk.className='particle';pk.style.left=Math.random()*100+'vw';pk.style.top=Math.random()*100+'vh';pk.style.width=pk.style.height=sz;pk.style.animationDelay='-'+(Math.random()*25)+'s';pk.style.animationDuration=(Math.random()*10+5)+'s';pk.style.opacity=Math.random()*0.9;if(Math.random()>0.5)pk.style.filter=`blur(${Math.random()*2}px)`;c.appendChild(pk)}}})();
+ const c=document.getElementById('particle-container');
+
+  if(c){c.innerHTML='';for(let j=0;j<280;j++){let pk=document.createElement('div'),sz=(Math.random()*4+1)+'px';pk.className='particle';pk.style.left=Math.random()*100+'vw';pk.style.top=Math.random()*100+'vh';pk.style.width=pk.style.height=sz;pk.style.animationDelay='-'+(Math.random()*20)+'s';pk.style.animationDuration=(Math.random()*15+5)+'s';pk.style.opacity=Math.random()*0.8;c.appendChild(pk)}}
+
+})();
 
 /* 5. SWITCH SPARK ICON */
 function changeIcon(){const i=document.getElementById('element-spark');if(i){i.innerHTML=i.innerHTML==='\ud83d\udd25'?'\ud83d\udca7':'\ud83d\udd25'}}
