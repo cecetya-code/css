@@ -1,6 +1,6 @@
 
 /* Global Reset & Body */
-body {color: #708090;font-family: "Love Ya Like A Sister", cursive;line-height: 1.6;font-size: 1rem;max-width: 900px;margin: 0 auto;padding: 0 20px;background: linear-gradient(270deg, #EADDCA, #e6dcdc, #d7e2e1);background-size: 600% 600%;animation: BackgroundFlow 15s ease infinite;}
+body {color: black;font-family: "Love Ya Like A Sister", cursive;line-height: 1.6;font-size: 1rem;max-width: 900px;margin: 0 auto;padding: 0 20px;background: linear-gradient(270deg, #EADDCA, #e6dcdc, #d7e2e1);background-size: 600% 600%;animation: BackgroundFlow 15s ease infinite;}
 @media screen and (max-width: 480px) {
 body { font-size: 1.2rem; background: #efe5d7; }}
 @keyframes BackgroundFlow {0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%}}
@@ -31,19 +31,12 @@ h3 { font-size: 1.2rem; margin: 1em 0 .5em; font-weight: 500; color: #1F1F1F; li
 
 /* Jempol Kaki */
 #fake-scrollbar-area{position:fixed;top:0;right:0;width:80px;height:100%;z-index:999999;background:rgba(0,0,0,0.01);cursor:pointer;}
-#fake-scrollbar-thumb{position:absolute;right:5px;width:80px;height:80px;background:#fdeea5;border-radius:50%;opacity:0.9;box-shadow:0 0 15px rgba(253,238,165,0.5);display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:&#39;roboto&#39;,sans-serif;font-size:11px;color:#000;font-weight:800;transition:transform 0.1s linear;line-height:1.1;text-align:center;pointer-events:none;}
+#fake-scrollbar-thumb{position:absolute;right:5px;width:80px;height:80px;background:#fdeea5;border-radius:50%;opacity:0.9;box-shadow:0 0 15px rgba(253,238,165,0.5);display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:&#39;roboto&#39;,sans-serif;font-size:14px;color:#000;font-weight:800;transition:transform 0.1s linear;line-height:1.1;text-align:center;pointer-events:none;}
 
 /* Partikel */
 .particles { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 1; pointer-events: none; }
 .particle { position: absolute; background: brown; border-radius: 50%; animation: float 15s infinite linear; box-shadow: 0 0 10px #fdeea5; }
 @keyframes float { 0% { transform: translateY(110vh) scale(0.5); opacity: 0; } 50% { opacity: 0.8; } 100% { transform: translateY(-10vh) scale(1.2); opacity: 0; } }
-
-
-/* Footer */
-#footer-wrapper-bg { padding: 30px 0; margin-top: 60px; width: 100%; float: left; border-radius: 30px 30px 0 0; background: none; }
-#footer-copyright { display: flex; justify-content: center; align-items: center; width: 100%; text-align: center; }
-.copyright-area {font-family: "Love Ya Like A Sister", cursive; font-size: 1.1rem; color: #708090; text-align: center; margin: 0 auto; }
-.copyright-area a { text-decoration: none; color: #708090; font-weight: 700; }
 
 /* Quote */
 blockquote {position: relative;padding: 28px 10px;border: none;background: #fff;text-align: center;font-size: 1.3em;color: #444;}
