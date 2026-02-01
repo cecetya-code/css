@@ -23,8 +23,21 @@
   const i=(e)=>{const y=e.touches?e.touches[0].clientY:e.clientY,v=window.innerHeight-sh;let cp=Math.max(0,Math.min(y-(sh/2),v));window.scrollTo({top:(cp/v)*(bd.scrollHeight-window.innerHeight),behavior:'auto'})};
   if(sa&&st){sa.addEventListener('touchstart',i,{passive:false});sa.addEventListener('touchmove',(e)=>{e.preventDefault();i(e)},{passive:false});sa.addEventListener('mousedown',i);window.addEventListener('scroll',u);window.addEventListener('resize',u);u();}
 
-  /* 4. PARTICLES */
- const c=document.getElementById('particle-container');
- if(c){c.innerHTML='';for(let j=0;j<1080;j++){let pk=document.createElement('div'),sz=(Math.random()*4+1)+'px';pk.className='particle';pk.style.left=Math.random()*100+'vw';pk.style.top=Math.random()*100+'vh';pk.style.width=pk.style.height=sz;pk.style.animationDelay='-'+(Math.random()*20)+'s';pk.style.animationDuration=(Math.random()*15+5)+'s';pk.style.opacity=Math.random()*0.8;c.appendChild(pk)}}
-
-})();
+/* 4. PARTICLES - Optimized Color */
+const c=document.getElementById('particle-container');
+if(c){c.innerHTML='';for(let j=0;j<700;j++){
+    let pk=document.createElement('div'),sz=(Math.random()*4+1)+'px';
+    pk.className='particle';
+    pk.style.left=Math.random()*100+'vw';
+    pk.style.top=Math.random()*100+'vh';
+    pk.style.width=pk.style.height=sz;
+    
+    // WARNA BARU DI SINI:
+    pk.style.backgroundColor='#5D4037'; 
+    pk.style.borderRadius='50%'; 
+    
+    pk.style.animationDelay='-'+(Math.random()*20)+'s';
+    pk.style.animationDuration=(Math.random()*15+5)+'s';
+    pk.style.opacity=Math.random()*0.5; // Agak transparan biar gak ganggu baca
+    c.appendChild(pk)
+}}
