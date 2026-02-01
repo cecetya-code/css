@@ -1,6 +1,6 @@
 
 /* Global Reset & Body */
-body {color: black;font-family: "Love Ya Like A Sister", cursive;line-height: 1.6;font-size: 1rem;max-width: 900px;margin: 0 auto;padding: 0 20px;background: linear-gradient(270deg, #EADDCA, #e6dcdc, #d7e2e1);background-size: 600% 600%;animation: BackgroundFlow 15s ease infinite;}
+body {color: black;ffont-family: "Plus Jakarta Sans", sans-serif;line-height: 1.6;font-size: 1rem;max-width: 900px;margin: 0 auto;padding: 0 20px;background: linear-gradient(270deg, #EADDCA, #e6dcdc, #d7e2e1);background-size: 600% 600%;animation: BackgroundFlow 15s ease infinite;}
 @media screen and (max-width: 480px) {
 body { font-size: 1.2rem; background: #efe5d7; }}
 @keyframes BackgroundFlow {0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%}}
@@ -24,7 +24,7 @@ h3 { font-size: 1.2rem; margin: 1em 0 .5em; font-weight: 500; color: #1F1F1F; li
 
 /* Mantra */
 .mantra-container { margin-top: 60px; padding: 40px 20px; text-align: center; border-top: 2px dashed #c3e6e4; background: #fff; border-radius: 30px; }
-.mantra-text { font-size: 1.3rem; font-style: italic; color: #333; line-height: 1.8; position: relative; }
+.mantra-text { font-size: 1.3rem; font-family: "Love Ya Like A Sister", cursive;font-style: italic; color: #333; line-height: 1.8; position: relative; }
 .mantra-text { opacity: 0; animation: fadeInMantra 2s forwards; }
 @keyframes fadeInMantra { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 .mantra-author { display: block; margin-top: 20px; font-size: 0.8rem; letter-spacing: 3px; color: #b2b2b2; text-transform: uppercase; font-weight: bold; }
