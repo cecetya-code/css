@@ -1,6 +1,6 @@
 
 /* Global Reset & Body */
-body {color: black;ffont-family: "Plus Jakarta Sans", sans-serif;line-height: 1.6;font-size: 1rem;max-width: 900px;margin: 0 auto;padding: 0 20px;background: linear-gradient(270deg, #EADDCA, #e6dcdc, #d7e2e1);background-size: 600% 600%;animation: BackgroundFlow 15s ease infinite;}
+body {color: black;font-family: "Plus Jakarta Sans", sans-serif;line-height: 1.6;font-size: 1rem;max-width: 900px;margin: 0 auto;padding: 0 20px;background: linear-gradient(270deg, #EADDCA, #e6dcdc, #d7e2e1);background-size: 600% 600%;animation: BackgroundFlow 15s ease infinite;}
 @media screen and (max-width: 480px) {
 body { font-size: 1.2rem; background: #efe5d7; }}
 @keyframes BackgroundFlow {0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%}}
