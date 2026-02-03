@@ -28,4 +28,17 @@
   if(c){c.innerHTML='';for(let j=0;j<480;j++){let pk=document.createElement('div'),sz=(Math.random()*4+1)+'px';pk.className='particle';pk.style.left=Math.random()*100+'vw';pk.style.top=Math.random()*100+'vh';pk.style.width=pk.style.height=sz;pk.style.animationDelay='-'+(Math.random()*20)+'s';pk.style.animationDuration=(Math.random()*15+5)+'s';pk.style.opacity=Math.random()*0.8;c.appendChild(pk)}}
 })();
 
+/* 4. Sidebarr */
+var sidebarOpen = true;
 
+function toggleNav() {
+  if (sidebarOpen) {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main-content").style.margin_left= "0";
+    sidebarOpen = false;
+  } else {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main-content").style.margin_left = "250px";
+    sidebarOpen = true;
+  }
+}
