@@ -1,6 +1,6 @@
 
 /* Global Reset & Body */
-body {color: black;font-family: "Plus Jakarta Sans", sans-serif;line-height: 1.6;font-size: 1rem;max-width: 900px;margin: 0 auto;padding: 0 20px;background: linear-gradient(270deg, #EADDCA, #e6dcdc, #d7e2e1);background-size: 600% 600%;animation: BackgroundFlow 15s ease infinite;}
+body {color: black;font-family: 'Google Sans', sans-serif;line-height: 1.6;font-size: 1rem;max-width: 900px;margin: 0 auto;padding: 0 20px;background: linear-gradient(270deg, #EADDCA, #e6dcdc, #d7e2e1);background-size: 600% 600%;animation: BackgroundFlow 15s ease infinite;}
 
 @media screen and (max-width: 768px) 
 {body {font-family: 'Google Sans', sans-serif !important;font-size: 15px !important; line-height: 1.6 !important; -webkit-text-size-adjust: 95%;padding: 10px;}
