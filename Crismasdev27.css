@@ -54,7 +54,7 @@ blockquote footer {margin-top: 10px;font-weight: bold;font-size: 0.9em;color: #8
 .sidebar {height: 100%;width: 250px; /* Lebar saat terbuka */position: fixed;z-index: 999;top: 0;left: 0;background-color: #E9EEF6; /* Warna gelap ala Gemini */overflow-x: hidden;transition: 0.3s;padding-top: 20px;border-right: 1px solid #333;}
 .sidebar a {font-family: 'Google Sans', sans-serif;padding: 2px;text-decoration: none;font-size: 11px;color: black;display: block;transition: 0.2s;}
 .sidebar a:hover {background-color: #333;color: black;}
-.sidebar h3 {font-family: 'Google Sans', sans-serif;padding: 2px;text-decoration: none;font-size: 13px;color: black;display: block;transition: 0.2s;}
+.sidebar h4 {font-family: 'Google Sans', sans-serif;padding: 2px;text-decoration: none;font-size: 13px;color: black;display: block;transition: 0.2s;}
 .sidebar .sidebar-header { padding: 0 15px 20px 15px; font-family: 'Google Sans', sans-serif;  font-weight: bold;  color: black;}
 
 /* Tombol Menu */
