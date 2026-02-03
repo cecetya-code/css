@@ -48,3 +48,17 @@ blockquote {font-family: 'Google Sans', sans-serif !important;position: relative
 blockquote {position: relative;padding: 28px 10px;border: none;background: #fff;text-align: center;font-size: 1.3em;color: #444;}
 blockquote::before {content: "\201C"; /* Tanda kutip pembuka */font-size: 80px;color: #e67e22; /* Warna orange/gold untuk 'Spark' */position: absolute; top: -30px;left: 20px;font-family: serif;}
 blockquote footer {margin-top: 10px;font-weight: bold;font-size: 0.9em;color: #888;}
+
+
+/* Sidebar Style */
+.sidebar {height: 100%;width: 250px; /* Lebar saat terbuka */position: fixed;z-index: 999;top: 0;left: 0;background-color: #1e1e1e; /* Warna gelap ala Gemini */overflow-x: hidden;transition: 0.3s;padding-top: 20px;border-right: 1px solid #333;}
+.sidebar a {padding: 10px 15px;text-decoration: none;font-size: 15px;color: #ccc;display: block;transition: 0.2s;}
+.sidebar a:hover {background-color: #333;color: white;}
+.sidebar .sidebar-header { padding: 0 15px 20px 15px; font-family: 'Google Sans', sans-serif;  font-weight: bold;  color: #fff;}
+/* Tombol Menu */
+.openbtn {  font-size: 20px;  cursor: pointer;  background-color: #1e1e1e;  color: white;  padding: 10px 15px;  border: none;  position: fixed;  top: 15px;  left: 15px;  z-index: 1000;  border-radius: 5px;}
+/* Geser konten utama saat sidebar terbuka */
+#main-content {  transition: margin-left .3s;padding: 20px;margin-left: 250px; /* Default terbuka di PC */}
+
+/* Responsif Mobile */
+@media screen and (max-width: 768px) {.sidebar { width: 0; }  #main-content { margin-left: 0; }}
