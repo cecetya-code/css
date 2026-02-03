@@ -23,31 +23,9 @@
   const i=(e)=>{const y=e.touches?e.touches[0].clientY:e.clientY,v=window.innerHeight-sh;let cp=Math.max(0,Math.min(y-(sh/2),v));window.scrollTo({top:(cp/v)*(bd.scrollHeight-window.innerHeight),behavior:'auto'})};
   if(sa&&st){sa.addEventListener('touchstart',i,{passive:false});sa.addEventListener('touchmove',(e)=>{e.preventDefault();i(e)},{passive:false});sa.addEventListener('mousedown',i);window.addEventListener('scroll',u);window.addEventListener('resize',u);u();}
 
-/* 4. PARTICLES - Optimized for Mobile & Desktop */
-const c = document.getElementById('particle-container');
-
-if (c) {
-  c.innerHTML = '';
-  
-  // Taktis: Deteksi jika layar di bawah 768px (Mobile)
-  const isMobile = window.innerWidth <= 768;
-  
-  // Kalau HP kasih 80 saja (biar clean), kalau PC tetap 480
-  const particleCount = isMobile ? 80 : 880;
-
-  for (let j = 0; j < particleCount; j++) {
-    let pk = document.createElement('div'),
-        sz = (Math.random() * (isMobile ? 2 : 4) + 1) + 'px'; // Ukuran di HP juga diperkecil sedikit
-    
-    pk.className = 'particle';
-    pk.style.left = Math.random() * 100 + 'vw';
-    pk.style.top = Math.random() * 100 + 'vh';
-    pk.style.width = pk.style.height = sz;
-    pk.style.animationDelay = '-' + (Math.random() * 20) + 's';
-    pk.style.animationDuration = (Math.random() * 15 + 5) + 's';
-    pk.style.opacity = Math.random() * 0.8;
-    c.appendChild(pk);
-  }
-}
+/* 4. PARTICLES - Optimized Color */
+ const c=document.getElementById('particle-container');
+  if(c){c.innerHTML='';for(let j=0;j<480;j++){let pk=document.createElement('div'),sz=(Math.random()*4+1)+'px';pk.className='particle';pk.style.left=Math.random()*100+'vw';pk.style.top=Math.random()*100+'vh';pk.style.width=pk.style.height=sz;pk.style.animationDelay='-'+(Math.random()*20)+'s';pk.style.animationDuration=(Math.random()*15+5)+'s';pk.style.opacity=Math.random()*0.8;c.appendChild(pk)}}
+})();
 
 
