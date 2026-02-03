@@ -56,8 +56,11 @@ blockquote footer {margin-top: 10px;font-weight: bold;font-size: 0.9em;color: #8
 .sidebar .sidebar-header { padding: 0 15px 20px 15px; font-family: 'Google Sans', sans-serif;  font-weight: bold;  color: black;}
 .sidebar h4 {font-family: 'Google Sans', sans-serif;padding: 2px;text-decoration: none;font-size: 13px;color: black;display: block;transition: 0.2s;margin-top: 17px;margin-bottom: -19px;}
 
+#mySidebar {width: 0;height: 100%;position: fixed;z-index: 999;top: 0;left: 0;background-color: #1e1e1e;overflow-x: hidden;transition: 0.3s;}
+#main-content { margin-left: 0; /* Awalnya 0 karena sidebar nutup */  transition: margin-left 0.3s;  padding: 20px;}
+
 /* Tombol Menu */
-.openbtn {  font-size: 20px;  cursor: pointer;  background-color: #E9EEF6;  color: black;  padding: 10px 15px;  border: none;  position: fixed;  top: 15px;  left: 15px;  z-index: 1000;  border-radius: 5px;}
+.openbtn {  font-size: 20px;  cursor: pointer;  background-color: #E9EEF6;  color: black;  padding: 10px 15px;  border: none;  position: fixed;  top: 15px;  left: 15px;  z-index: 1000;  border-radius: 5px; transition: left 0.3s;}
 
 /* Geser konten utama saat sidebar terbuka */
 #main-content {  transition: margin-left .3s;padding: 20px;margin-left: 250px; /* Default terbuka di PC */}
