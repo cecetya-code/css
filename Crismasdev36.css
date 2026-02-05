@@ -1,6 +1,6 @@
 
 /* Global Reset & Body */
-body {color: black;font-family: 'Google Sans', sans-serif;line-height: 1.6;font-size: 15px;max-width: 900px;margin: 0 auto;padding: 0 20px;background: #E9EEF6}
+body {color: black;font-family: 'Google Sans', sans-serif;line-height: 1.6;font-size: 14px;max-width: 900px;margin: 0 auto;padding: 0 20px;background: #E9EEF6}
 
 @media screen and (max-width: 768px) 
 {body {font-family: 'Google Sans', sans-serif !important;font-size: 15px !important; line-height: 1.6 !important; -webkit-text-size-adjust: 95%;padding: 10px;}
@@ -15,8 +15,9 @@ blockquote {font-family: 'Google Sans', sans-serif !important;position: relative
 /* Intro Section */
 #intro-wrap { padding: 30px 0; text-align: center; border-radius: 0 0 50px 50px; margin-bottom: 40px; }
 .intro-content { display: flex; flex-direction: column; align-items: center; margin-top: 50px; }
-.intro-title { font-family: "Love Ya Like A Sister", cursive; font-size: 50px; color: #000209; font-weight: 900; position: relative; z-index: 1; }
-.intro-title:before { content: ''; background: #c3e6e478; height: 70px; width: 70px; position: absolute; border-radius: 50%; z-index: -1; top: -5px; left: -20px; }
+.intro-title { font-family: "Schoolbell", cursive; font-size: 50px; color: #000209; font-weight: 400; position: relative; z-index: 1; }
+.intro-title:before { content: ''; background: #18171078; height: 15px; width: 15px; position: absolute; border-radius: 50%; z-index: -1; top: 18px; left: 55px; animation: kunang-kunang 3s infinite ease-in-out; }
+@keyframes kunang-kunang { 0%, 100% { opacity: 0.2; transform: scale(0.8); } 50% { opacity: 1; transform: scale(1.1); box-shadow: 0 0 15px #18171078; } }
 .intro-snippet { font-size: 18px; color: #3b3b3c; overflow: hidden; border-right: .15em solid #fdeea5; white-space: nowrap; margin: 0 auto; letter-spacing: .15em; animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite; }
 @keyframes typing { from { width: 0 } to { width: 100% } }
 @keyframes blink-caret { 50% { border-color: transparent } }
@@ -29,7 +30,7 @@ blockquote {font-family: 'Google Sans', sans-serif !important;position: relative
 
 /* Mantra */
 .mantra-container { margin-top: 60px; padding: 40px 20px; text-align: center; border-top: 2px dashed #c3e6e4; background: #fff; border-radius: 30px; }
-.mantra-text { font-size: 1.3rem; font-family: "Love Ya Like A Sister", cursive;font-style: italic; color: #333; line-height: 1.8; position: relative; }
+.mantra-text { font-size: 1.3rem; font-family: "Schoolbell", cursive;font-style: italic; color: #333; line-height: 1.8; position: relative; }
 .mantra-text { opacity: 0; animation: fadeInMantra 2s forwards; }
 @keyframes fadeInMantra { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 .mantra-author { display: block; margin-top: 20px; font-size: 0.8rem; letter-spacing: 3px; color: #b2b2b2; text-transform: uppercase; font-weight: bold; }
