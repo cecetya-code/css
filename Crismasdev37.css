@@ -1,6 +1,6 @@
 
 /* Global Reset & Body */
-body {color: black;font-family: 'Google Sans', sans-serif;line-height: 1.6;font-size: 14px;max-width: 900px;margin: 0 auto;padding: 0 20px;background: #E9EEF6}
+body {color: black;font-family: 'Google Sans', sans-serif;line-height: 30px;font-size: 14px;max-width: 900px;margin: 0 auto;padding: 0 20px;background: #E9EEF6}
 
 @media screen and (max-width: 768px) 
 {body {font-family: 'Google Sans', sans-serif !important;font-size: 15px !important; line-height: 1.6 !important; -webkit-text-size-adjust: 95%;padding: 10px;}
@@ -26,7 +26,8 @@ blockquote {font-family: 'Google Sans', sans-serif !important;position: relative
 
 /* Posts & Archive */
 .item-post { background: #fff; padding: 40px; border-radius: 15px; margin-top: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
-.item-post h1 { font-size: 2.2rem; color: #000209; margin-bottom: 25px; }
+.item-post h1 { font-size: 18px; color: #000209; margin-bottom: 25px; }
+
 
 /* Mantra */
 .mantra-container { margin-top: 60px; padding: 40px 20px; text-align: center; border-top: 2px dashed #c3e6e4; background: #fff; border-radius: 30px; }
@@ -45,9 +46,9 @@ blockquote {font-family: 'Google Sans', sans-serif !important;position: relative
 @keyframes float { 0% { transform: translateY(110vh) scale(0.5); opacity: 0; } 50% { opacity: 0.8; } 100% { transform: translateY(-10vh) scale(1.2); opacity: 0; } }
 
 /* Quote */
-blockquote {position: relative;padding: 28px 10px;border: none;background: #fff;text-align: center;font-size: 1.3em;color: #444;}
-blockquote::before {content: "\201C"; /* Tanda kutip pembuka */font-size: 80px;color: #e67e22; /* Warna orange/gold untuk 'Spark' */position: absolute; top: -30px;left: 20px;font-family: serif;}
-blockquote footer {margin-top: 10px;font-weight: bold;font-size: 0.9em;color: #888;}
+blockquote {position: relative;padding:8px 5px;border: none;background: #fff;text-align: center;font-size: 15px;color: #444;}
+blockquote::before {content: "\201C"; /* Tanda kutip pembuka */font-size: 30px;color: #e67e22; /* Warna orange/gold untuk 'Spark' */position: absolute; top: -30px;left: 20px;font-family: serif;}
+blockquote footer {margin-top: 3px;font-weight: bold;font-size: 0.9em;color: #888;}
 
 
 /* Sidebar Style */
