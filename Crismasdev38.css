@@ -1,6 +1,6 @@
 
 /* Global Reset & Body */
-body {color: black;font-family: 'Google Sans', sans-serif;line-height: 30px;font-size: 14px;max-width: 900px;margin: 0 auto;padding: 0 20px;background: #E9EEF6}
+body {color: black;font-family: 'Google Sans', sans-serif;line-height: 30px;font-size: 14px;max-width: 900px;margin: 0 auto;padding: 0 20px;background: #fefeff}
 
 @media screen and (max-width: 768px) 
 {body {font-family: 'Google Sans', sans-serif !important;font-size: 15px !important; line-height: 1.6 !important; -webkit-text-size-adjust: 95%;padding: 10px;}
@@ -56,8 +56,7 @@ blockquote footer {margin-top: 3px;font-weight: bold;font-size: 0.9em;color: #88
 .sidebar a {font-family: 'Google Sans', sans-serif;padding: 2px;text-decoration: none;font-size: 11px;color: black;display: block;transition: 0.2s;}
 .sidebar a:hover {background-color: #333;color: black;}
 .sidebar .sidebar-header { padding: 0 15px 20px 15px; font-family: 'Google Sans', sans-serif;  font-weight: bold;  color: black;}
-.sidebar h4 {font-family: 'Google Sans', sans-serif;padding: 2px;text-decoration: none;font-size: 13px;color: black;display: block;transition: 0.2s;margin-top: 17px;margin-bottom: -19px;}
-
+.sidebar h4 {font-family: 'Google Sans', sans-serif;padding: 2px;text-decoration: none;font-size: 13px;color: black;display: block;transition: 0.2s;margin-top: 17px;margin-bottom: -29px;}
 #mySidebar {width: 0;height: 100%;position: fixed;z-index: 999;top: 0;left: 0;overflow-x: hidden;transition: 0.3s;}
 #main-content { margin-left: 0; /* Awalnya 0 karena sidebar nutup */  transition: margin-left 0.3s;  padding: 20px;}
 
