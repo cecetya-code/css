@@ -16,7 +16,6 @@ blockquote {font-family: 'Google Sans', sans-serif !important;position: relative
 #intro-wrap { padding: 30px 0; text-align: center; border-radius: 0 0 50px 50px; margin-bottom: 40px; }
 .intro-content { display: flex; flex-direction: column; align-items: center; margin-top: 50px; }
 .intro-title { font-family: 'Google Sans', sans-serif; font-size: 50px; color: #000209; font-weight: 700; position: relative; z-index: 1; }
-.intro-title:before { content: ''; background: #18171078; height: 15px; width: 15px; position: absolute; border-radius: 50%; z-index: -1; top: -8px; left: 44px; animation: kunang-kunang 3s infinite ease-in-out; }
 .intro-action a { display: inline-block; height: 60px; line-height: 60px; color: #000209; background: #fffdf1; font-size: 21px; font-weight: 700; padding: 0 30px; margin-top: 30px; border: 2px solid #000209; border-radius: 8px; box-shadow: 4px 4px 0px 0px #000209; transition: all .17s ease; text-decoration: none; }
 .intro-action a:hover { background: #000209; color: #fff; transform: translate(-2px, -2px); box-shadow: 6px 6px 0px 0px #000209; }
 
