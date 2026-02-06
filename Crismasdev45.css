@@ -15,12 +15,8 @@ blockquote {font-family: 'Google Sans', sans-serif !important;position: relative
 /* Intro Section */
 #intro-wrap { padding: 30px 0; text-align: center; border-radius: 0 0 50px 50px; margin-bottom: 40px; }
 .intro-content { display: flex; flex-direction: column; align-items: center; margin-top: 50px; }
-.intro-title { font-family: 'Google Sans', sans-serif; font-size: 50px; color: #000209; font-weight: 400; position: relative; z-index: 1; }
+.intro-title { font-family: 'Google Sans', sans-serif; font-size: 50px; color: #000209; font-weight: 700; position: relative; z-index: 1; }
 .intro-title:before { content: ''; background: #18171078; height: 15px; width: 15px; position: absolute; border-radius: 50%; z-index: -1; top: -8px; left: 44px; animation: kunang-kunang 3s infinite ease-in-out; }
-@keyframes kunang-kunang { 0%, 100% { opacity: 0.2; transform: scale(0.8); } 50% { opacity: 1; transform: scale(1.1); box-shadow: 0 0 15px #18171078; } }
-.intro-snippet { font-size: 18px; color: #3b3b3c; overflow: hidden; border-right: .15em solid #fdeea5; white-space: nowrap; margin: 0 auto; letter-spacing: .15em; animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite; }
-@keyframes typing { from { width: 0 } to { width: 100% } }
-@keyframes blink-caret { 50% { border-color: transparent } }
 .intro-action a { display: inline-block; height: 60px; line-height: 60px; color: #000209; background: #fffdf1; font-size: 21px; font-weight: 700; padding: 0 30px; margin-top: 30px; border: 2px solid #000209; border-radius: 8px; box-shadow: 4px 4px 0px 0px #000209; transition: all .17s ease; text-decoration: none; }
 .intro-action a:hover { background: #000209; color: #fff; transform: translate(-2px, -2px); box-shadow: 6px 6px 0px 0px #000209; }
 
