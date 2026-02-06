@@ -21,7 +21,7 @@ blockquote {font-family: 'Google Sans', sans-serif !important;position: relative
 .intro-snippet { font-size: 18px; color: #3b3b3c; overflow: hidden; border-right: .15em solid #fdeea5; white-space: nowrap; margin: 0 auto; letter-spacing: .15em; animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite; }
 @keyframes typing { from { width: 0 } to { width: 100% } }
 @keyframes blink-caret { 50% { border-color: transparent } }
-.intro-action a { display: inline-block; height: 60px; line-height: 60px; color: #000209; background: #fdeea5; font-size: 21px; font-weight: 700; padding: 0 30px; margin-top: 30px; border: 2px solid #000209; border-radius: 8px; box-shadow: 4px 4px 0px 0px #000209; transition: all .17s ease; text-decoration: none; }
+.intro-action a { display: inline-block; height: 60px; line-height: 60px; color: #000209; background: #fffdf1; font-size: 21px; font-weight: 700; padding: 0 30px; margin-top: 30px; border: 2px solid #000209; border-radius: 8px; box-shadow: 4px 4px 0px 0px #000209; transition: all .17s ease; text-decoration: none; }
 .intro-action a:hover { background: #000209; color: #fff; transform: translate(-2px, -2px); box-shadow: 6px 6px 0px 0px #000209; }
 
 /* Posts & Archive */
@@ -29,7 +29,7 @@ blockquote {font-family: 'Google Sans', sans-serif !important;position: relative
 .item-post h1 { font-size: 18px; color: #000209; margin-bottom: 25px; }
 
 /* Mantra */
-.mantra-container { margin: 60px 0 100px 0; padding: 40px 20px; text-align: center; border-top: 2px dashed #c3e6e4; background: #fff; border-radius: 30px; display: block; clear: both; }
+.mantra-container { margin: 60px 0 100px 0; padding: 40px 20px; text-align: center; border: 4px dashed #c3e6e4; background: #fff; border-radius: 30px; display: block; clear: both; }
 .mantra-text { font-size: 1.3rem; font-family: 'Google Sans', sans-serif;font-style: italic; color: #333; line-height: 1.8; position: relative; }
 .mantra-text { opacity: 0; animation: fadeInMantra 2s forwards; }
 @keyframes fadeInMantra { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
