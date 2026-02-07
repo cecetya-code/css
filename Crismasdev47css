@@ -1,6 +1,6 @@
 
 /* Global Reset & Body */
-body {color: black;font-family: 'Google Sans', sans-serif;line-height: 30px;font-size: 14px;max-width: 900px;margin: 0 auto;padding: 0 20px;background: #fefeff}
+body {color: black;font-family: 'Google Sans', sans-serif;line-height: 30px;font-size: 15px;max-width: 900px;margin: 0 auto;padding: 0 20px;background: #fefeff}
 
 @media screen and (max-width: 768px) 
 {body {font-family: 'Google Sans', sans-serif !important;font-size: 15px !important; line-height: 1.6 !important; -webkit-text-size-adjust: 95%;padding: 10px;}
