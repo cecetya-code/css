@@ -11,11 +11,7 @@
   }
 
   /* Jalankan langsung & saat load */
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', setMantra);
-  } else {
-    setMantra();
-  }
+  if (document.readyState === 'loading') {document.addEventListener('DOMContentLoaded', setMantra);} else {setMantra();}
 
     /* 3. FAKE SCROLLBAR & PERCENTAGE */
   const sa=document.getElementById('fake-scrollbar-area'),st=document.getElementById('fake-scrollbar-thumb'),bd=document.documentElement,sh=50;
@@ -24,30 +20,5 @@
   if(sa&&st){sa.addEventListener('touchstart',i,{passive:false});sa.addEventListener('touchmove',(e)=>{e.preventDefault();i(e)},{passive:false});sa.addEventListener('mousedown',i);window.addEventListener('scroll',u);window.addEventListener('resize',u);u();}
 
 /* 4. PARTICLES - Optimized Color */
- const c=document.getElementById('particle-container');
-  if(c){c.innerHTML='';for(let j=0;j<180;j++){let pk=document.createElement('div'),sz=(Math.random()*4+1)+'px';pk.className='particle';pk.style.left=Math.random()*100+'vw';pk.style.top=Math.random()*100+'vh';pk.style.width=pk.style.height=sz;pk.style.animationDelay='-'+(Math.random()*20)+'s';pk.style.animationDuration=(Math.random()*15+5)+'s';pk.style.opacity=Math.random()*0.8;c.appendChild(pk)}}
-})();
+ const c=document.getElementById('particle-container');if(c){c.innerHTML='';for(let j=0;j<380;j++){let pk=document.createElement('div'),sz=(Math.random()*4+1)+'px';pk.className='particle';pk.style.left=Math.random()*100+'vw';pk.style.top=Math.random()*100+'vh';pk.style.width=pk.style.height=sz;pk.style.animationDelay='-'+(Math.random()*20)+'s';pk.style.animationDuration=(Math.random()*15+5)+'s';pk.style.opacity=Math.random()*0.8;c.appendChild(pk)}}})();
 
-/* 4. Sidebarr */
-// Set awal ke false (tertutup)
-var sidebarOpen = false;
-
-function toggleNav() {
-  var sidebar = document.getElementById("mySidebar");
-  var main = document.getElementById("main-content");
-
-  if (!sidebarOpen) {
-    // Kalau tertutup, maka Buka
-    sidebar.style.width = "250px";
-    // Cuma geser konten kalau di PC (layar lebar)
-    if (window.innerWidth > 768) {
-      main.style.marginLeft = "250px";
-    }
-    sidebarOpen = true;
-  } else {
-    // Kalau terbuka, maka Tutup
-    sidebar.style.width = "0";
-    main.style.marginLeft = "0";
-    sidebarOpen = false;
-  }
-}
