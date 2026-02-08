@@ -7,18 +7,11 @@
     if (mantraElement) {
       const randomMantra = mantras[Math.floor(Math.random() * mantras.length)];
       mantraElement.innerText = `\u0022 ${randomMantra} \u0022`;
-    }
-  }
+    }}
 
   /* Jalankan langsung & saat load */
   if (document.readyState === 'loading') {document.addEventListener('DOMContentLoaded', setMantra);} else {setMantra();}
 
-    /* 3. FAKE SCROLLBAR & PERCENTAGE */
-  const sa=document.getElementById('fake-scrollbar-area'),st=document.getElementById('fake-scrollbar-thumb'),bd=document.documentElement,sh=50;
-  const u=()=>{const wh=window.innerHeight,sh_full=bd.scrollHeight-wh,s=sh_full<=0?0:window.pageYOffset/sh_full,v=s*(wh-sh),pct=Math.round(s*100);if(st){st.style.top=v+'px';st.innerHTML='<span style="font-size:18px;display:block;line-height:1;">\ud83e\uddb6</span>'+(isFinite(pct)?pct:0)+'%'}};
-  const i=(e)=>{const y=e.touches?e.touches[0].clientY:e.clientY,v=window.innerHeight-sh;let cp=Math.max(0,Math.min(y-(sh/2),v));window.scrollTo({top:(cp/v)*(bd.scrollHeight-window.innerHeight),behavior:'auto'})};
-  if(sa&&st){sa.addEventListener('touchstart',i,{passive:false});sa.addEventListener('touchmove',(e)=>{e.preventDefault();i(e)},{passive:false});sa.addEventListener('mousedown',i);window.addEventListener('scroll',u);window.addEventListener('resize',u);u();}
-
-/* 4. PARTICLES - Optimized Color */
- const c=document.getElementById('particle-container');if(c){c.innerHTML='';for(let j=0;j<380;j++){let pk=document.createElement('div'),sz=(Math.random()*4+1)+'px';pk.className='particle';pk.style.left=Math.random()*100+'vw';pk.style.top=Math.random()*100+'vh';pk.style.width=pk.style.height=sz;pk.style.animationDelay='-'+(Math.random()*20)+'s';pk.style.animationDuration=(Math.random()*15+5)+'s';pk.style.opacity=Math.random()*0.8;c.appendChild(pk)}}})();
+/* PARTICLES - Optimized Color */
+ const c=document.getElementById('particle-container');if(c){c.innerHTML='';for(let j=0;j<80;j++){let pk=document.createElement('div'),sz=(Math.random()*4+1)+'px';pk.className='particle';pk.style.left=Math.random()*100+'vw';pk.style.top=Math.random()*100+'vh';pk.style.width=pk.style.height=sz;pk.style.animationDelay='-'+(Math.random()*20)+'s';pk.style.animationDuration=(Math.random()*15+5)+'s';pk.style.opacity=Math.random()*0.8;c.appendChild(pk)}}})();
 
