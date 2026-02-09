@@ -14,4 +14,3 @@
 
 /* PARTICLES - Optimized Color */
  const c=document.getElementById('particle-container');if(c){c.innerHTML='';for(let j=0;j<40;j++){let pk=document.createElement('div'),sz=(Math.random()*4+1)+'px';pk.className='particle';pk.style.left=Math.random()*100+'vw';pk.style.top=Math.random()*100+'vh';pk.style.width=pk.style.height=sz;pk.style.animationDelay='-'+(Math.random()*20)+'s';pk.style.animationDuration=(Math.random()*15+5)+'s';pk.style.opacity=Math.random()*0.8;c.appendChild(pk)}}})();
-
