@@ -26,12 +26,6 @@ blockquote {font-family: 'Google Sans', sans-serif !important;position: relative
 .item-post { background: #fff; padding: 40px; border-radius: 15px; margin-top: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
 .item-post h1 { font-size: 18px; color: #000209; margin-bottom: 25px; }
 
-/* Mantra */
-.mantra-container { margin: 60px 0 100px 0; padding: 40px 20px; text-align: center; border: 4px dashed #c3e6e4; background: #fff; border-radius: 30px; display: block; clear: both; }
-.mantra-text { font-size: 1.3rem; font-family: 'Google Sans', sans-serif;font-style: italic; color: #333; line-height: 1.8; position: relative; }
-.mantra-text { opacity: 0; animation: fadeInMantra 2s forwards; }
-@keyframes fadeInMantra { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-.mantra-author { display: block; margin-top: 20px; font-size: 0.8rem; letter-spacing: 3px; color: #b2b2b2; text-transform: uppercase; font-weight: bold; }
 
 /* Partikel */
 .particles { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 1; pointer-events: none; }
